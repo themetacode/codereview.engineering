@@ -1,0 +1,6 @@
+blank_issues_enabled: true
+# Once Discussions are on, uncomment this so questions go there instead of issues:
+# contact_links:
+#   - name: Ask a question or discuss
+#     url: https://github.com/themetacode/codereview.engineering/discussions
+#     about: Questions and general conversation
