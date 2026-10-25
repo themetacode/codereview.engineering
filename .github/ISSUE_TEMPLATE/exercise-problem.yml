@@ -1,0 +1,45 @@
+name: Problem with an exercise
+description: A practice exercise or assessment has an error, or doesn't work
+labels: ["exercise"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please **don't post solutions or spoilers** here. Describe the problem without giving away the answer.
+  - type: input
+    id: page
+    attributes:
+      label: Which exercise?
+      description: Paste the address of the exercise page.
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of problem is it?
+      options:
+        - The code or ticket has an error
+        - A hint or answer seems wrong or debatable
+        - The exercise is unclear
+        - Something doesn't work on the page
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you expect, and what did you see instead?
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and device (optional)
+  - type: checkboxes
+    id: spoilers
+    attributes:
+      label: Spoilers
+      options:
+        - label: I haven't included a solution to the exercise
+          required: true
