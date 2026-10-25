@@ -1,0 +1,34 @@
+name: Mistake in a lesson
+description: Something in a lesson is wrong, unclear, or broken
+labels: ["lesson"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Which lesson?
+      description: Paste the address of the lesson page.
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of problem is it?
+      options:
+        - The explanation is wrong or misleading
+        - A code example is wrong
+        - Typo or unclear wording
+        - Broken link
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What is wrong?
+      description: Quote the sentence or code if you can.
+    validations:
+      required: true
+  - type: textarea
+    id: fix
+    attributes:
+      label: How would you fix it? (optional)
