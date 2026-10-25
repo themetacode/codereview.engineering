@@ -1,0 +1,16 @@
+name: General feedback
+description: An idea, a suggestion, or anything that isn't a mistake
+labels: ["feedback"]
+body:
+  - type: textarea
+    id: feedback
+    attributes:
+      label: What would you like to tell us?
+      description: Ideas, things you'd like to see, or what worked well.
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Which page is this about? (optional)
+      description: Paste the address from your browser.
